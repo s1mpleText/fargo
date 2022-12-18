@@ -18,7 +18,7 @@ bot.on('message', async (msg) => {
 
         bot.sendMessage(chatId, 'Здравствуйте, за каждый опубликованный мем вы будете получать денежное вознаграждение. \n' +
             'Его нужно отправлять одним сообщением вместе с реквизитами, пример:')
-        bot.sendPhoto(chatId, 'images/example-test.png', {caption: 'РЕКВИЗИТЫ + (ПЛАТЕЖНАЯ СИСТЕМА)'});
+        bot.sendPhoto(chatId, 'images/example-image.png', {caption: 'РЕКВИЗИТЫ + (ПЛАТЕЖНАЯ СИСТЕМА)'});
     }
 
     if (msg.photo && caption) {
@@ -30,30 +30,3 @@ bot.on('message', async (msg) => {
     }
 
 })
-
-
-// bot.getFile(msg.photo[0].file_id).then((resp) => {
-//     console.log(resp)
-//     // bot.sendPhoto(831238787, resp.file_id)
-//     bot.sendPhoto(chatId, resp.file_id)
-// })
-
-
-// await bot.sendPhoto(chatId, bot.getFile({ file_id: msg.file_id }))
-//
-// if(text.indexOf('/pcode') === 0) {
-//     let code = text.split(' ')[1]
-//
-//     await textToImage.generate(code, {
-//         maxWidth: 1280,
-//         customHeight: 446,
-//         textAlign: "center",
-//         lineHeight: 446,
-//         verticalAlign: "center",
-//         fontFamily: 'Vasek',
-//         fontSize: 256,
-//         debug: true,
-//         debugFilename: path.join('images', code + '.png'),
-//     })
-//     bot.sendPhoto(chatId, 'images/' + code + '.png');
-// }
