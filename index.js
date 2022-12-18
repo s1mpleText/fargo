@@ -18,7 +18,7 @@ bot.on('message', async (msg) => {
 
         bot.sendMessage(chatId, 'Здравствуйте, за каждый опубликованный мем вы будете получать денежное вознаграждение. \n' +
             'Его нужно отправлять одним сообщением вместе с реквизитами, пример:')
-        bot.sendPhoto(chatId, 'images/example-image.jpg', {caption: 'РЕКВИЗИТЫ + (ПЛАТЕЖНАЯ СИСТЕМА)'});
+        bot.sendPhoto(chatId, 'images/example-image.png', {caption: 'РЕКВИЗИТЫ + (ПЛАТЕЖНАЯ СИСТЕМА)'});
     }
 
     if (msg.photo && caption) {
